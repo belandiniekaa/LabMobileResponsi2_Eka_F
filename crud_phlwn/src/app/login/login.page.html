@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color: #1976d2; font-size: 24px;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="background-color: #e3f2fd;">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" style="color: #1976d2; font-size: 28px;">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Input Username -->
+  <ion-item lines="full" style="margin-top: 20px; background-color: #bbdefb;">
+    <ion-label position="floating" style="color: #1976d2; font-size: 18px;">Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username" required="required" style="--background: #bbdefb; --color: #1976d2; font-size: 18px;"></ion-input>
+  </ion-item>
+
+  <!-- Input Password -->
+  <ion-item lines="full" style="background-color: #bbdefb;">
+    <ion-label position="floating" style="color: #1976d2; font-size: 18px;">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" required="required" style="--background: #90caf9; --color: #1976d2; font-size: 18px;"></ion-input>
+  </ion-item>
+
+  <!-- Login Button -->
+  <ion-row style="margin-top: 20px;">
+    <ion-col>
+      <ion-button type="submit" expand="block" style="background-color: #1976d2; color: white; font-size: 18px;" (click)="login()">Login</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

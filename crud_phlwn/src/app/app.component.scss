@@ -1,0 +1,56 @@
+/* global.scss atau app.component.scss */
+
+/* Setel warna background global */
+ion-app {
+    --background: #f48fb1; /* Background pink soft */
+  }
+  
+  /* Setel warna latar belakang konten untuk memastikan semua konten juga mengikuti */
+  ion-content {
+    --background: #f48fb1; /* Pink soft */
+  }
+  
+  /* Setel warna teks agar kontras dengan background */
+  ion-label,
+  ion-title {
+    color: #ffffff; /* Putih untuk teks */
+  }
+  
+  /* Ikon dan tombol yang ada dalam header dan modal juga disesuaikan dengan warna */
+  ion-icon {
+    color: #ffffff; /* Warna putih untuk ikon */
+  }
+  
+  ion-toolbar {
+    --background: #f48fb1; /* Pink soft untuk toolbar */
+  }
+  
+  ion-card {
+    --background: #f8bbd0; /* Card background lebih muda agar tetap terlihat elegan */
+    border-radius: 10px;
+  }
+  
+  ion-button {
+    --background: #f06292; /* Soft pink untuk tombol */
+    --color: white; /* Teks putih pada tombol */
+  }
+  
+  ion-item {
+    --background: white; /* Background putih untuk item (seperti logout) */
+    --color: #f48fb1; /* Teks pink untuk item */
+  }
+  
+  ion-row, ion-col {
+    margin-top: 10px;
+  }
+  
+  /* Styling untuk modal */
+  ion-modal {
+    --background: #f48fb1; /* Pink soft untuk modal */
+  }
+  
+  ion-input, ion-textarea {
+    --background: #ffffff; /* Background putih pada input */
+    --color: #6a1b9a; /* Teks berwarna ungu */
+  }
+  
